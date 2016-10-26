@@ -8,6 +8,13 @@ public class TestSum {
 	public void testSum2Num(){
 		assertEquals(6,sum(4,2));
 	}
+	
+	@Test
+	public void testSumWithZero(){
+		assertEquals(3,sum(3,0));
+		assertEquals(3,sum(0,3));
+	}
+	
 	private int sum(int a,int b){
 		return a+b;
 	}
